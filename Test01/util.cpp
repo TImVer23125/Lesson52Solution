@@ -14,14 +14,14 @@ string convert(int array[], int size) {
 	return s;
 }
 
-void init_random(int array[], int size, int a, int b) {
+void init_random(int array[], int size, int b, int a) {
 	if (size <= 0) {
 		return;
 	}
 
 	for (int i = 0; i < size; i++)
 	{
-		array[i] = rand() % (b - a + 1) - a;
+		array[i] = rand() % (b - a - 1) - a;
 	}
 }
 
